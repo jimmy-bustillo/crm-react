@@ -49,7 +49,7 @@ function Index() {
 
   return (
     <>
-      <div className='font-black text-4xl text-blue-900'>Cliente</div>
+      <h1 className='font-black text-4xl text-blue-900'>Cliente</h1>
       <p className='mt-3'>Administra tus clientes</p>
 
       {clientes.length ? (
@@ -64,10 +64,7 @@ function Index() {
 
           <tbody>
             {clientes.map((cliente) => (
-              <Cliente 
-                cliente={cliente}
-                key={cliente.id}
-              />
+              <Cliente cliente={cliente} key={cliente.id} />
             ))}
           </tbody>
         </table>
